@@ -10,10 +10,11 @@ public class PrimeNumbersInRange {
 		int startingNumber=scan.nextInt();
 		System.out.println("Enter the ending number in range:");
 		int endingNumber=scan.nextInt();
+		System.out.println("The prime numbers from "+startingNumber+" to "+endingNumber+"are");
 		for(int i=startingNumber;i<=endingNumber;i++) {
 			int count=0;
 			if(i==1) {
-				System.out.println(i+"is neither a prime nor a an even");
+				System.out.println(i+" is neither a prime nor a composite");
 				continue;
 			}
 			for(int j=2;j<i/2;j++) {
@@ -22,7 +23,7 @@ public class PrimeNumbersInRange {
 				}
 			}
 			if(count==0) {
-				System.out.println("The prime numbers from"+startingNumber+"to"+endingNumber+"are");
+				
 				System.out.println(i);
 			}
 		}
